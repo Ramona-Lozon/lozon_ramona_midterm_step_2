@@ -19,8 +19,8 @@
      border-radius: 5px;
      padding: 20px;
      text-align: center;
-     margin-top: 10px;
-     margin-bottom:10px;
+     margin-top: 7px;
+     margin-bottom:7px;
    }
   
   /* ---Mobile Library Grid Styles--- */
@@ -32,14 +32,13 @@
       grid-template-columns: 1fr minmax(0, 1200px) 1fr;  
   }
   
-   .grid-con { 
+  /* main grid container */
+   .grid-con, .header-grid-con { 
      display: grid;
      grid-template-columns: repeat(4, minmax(0, 1fr));
-     grid-column-gap: 30px;
+     grid-column-gap: 14px;
      max-width: 1200px;
      margin: 0 auto;
-     padding-left: 15px;
-     padding-right: 15px;
   }
 
 #hero, #service_1, #service_2, #service_3, #service_4, #service_5, #service_6 {
@@ -52,6 +51,7 @@
    padding-bottom: 50px;
   }
 
+  /* mobile grid styles */
   .col-span-1	{grid-column: span 1 / span 1;}
   .col-span-2	{grid-column: span 2 / span 2;}
   .col-span-3	{grid-column: span 3 / span 3;}
@@ -73,14 +73,20 @@
   @media screen and (min-width: 768px) {
      .grid-con { 
         display: grid; 
-        grid-template-columns: repeat(12, minmax(0, 1fr));
-        grid-column-gap: 20px;
-        padding-left: 15px;
-        padding-right: 15px;
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+        grid-column-gap: 9px;
+        padding-left: 0px;
+        padding-right: 0px;
      }
   
+     .header-grid-con {
+      display: grid; 
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-column-gap: 9px;
+   }
+
 #nav {
-   text-align: right;
+   text-align: center;
 }
 
 #hero, #service_1, #service_2, #service_3, #service_4, #service_5, #service_6 {
@@ -93,6 +99,7 @@
    padding-bottom: 50px;
   }
 
+  /* tablet grid styles */
      .m-col-span-1	{grid-column: span 1 / span 1;}
      .m-col-span-2	{grid-column: span 2 / span 2;}
      .m-col-span-3	{grid-column: span 3 / span 3;}
@@ -138,16 +145,14 @@
   
   
   /* ---Desktop Library Grid Styles--- */
-  
+ 
   @media screen and (min-width: 1200px) {
-     .grid-con { 
+     .grid-con, .header-grid-con { 
         display: grid; 
         grid-template-columns: repeat(12, minmax(0, 1fr));
-        grid-column-gap: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
+        grid-column-gap: 14px;
      }
-  
+
 #desk_add{
  display:block;
 }
