@@ -6,53 +6,41 @@
     <link href="css/main.css" rel="stylesheet">
 
 
-    <title>Responsive Scaffold Homework #2</title>
+    <title>Dr. Nut</title>
 </head>
     
 <header class="header-grid-con">
-    <!-- header -->
+    <!-- header / nav-->
     <div id="logo" class="box col-start-1 col-end-2 m-col-start-1 m-col-end-2">Logo</div>
-    
-        <div id="nav" class="box col-start-2 col-end-3 m-col-start-2 m-col-end-3">Nav</div>
-
-        <div id="search" class="box col-start-3 col-end-4 m-col-start-10 m-col-end-11">Search</div>
+        <div id="nav" class="box col-start-2 col-end-3 hidden_desktop">Nav</div>
+        <div id="Products" class="box hidden_mobile hidden_tablet display_desktop l-col-start-2 l-col-end-4">Products</div>
+        <div id="About_us" class="box hidden_mobile hidden_tablet display_desktop l-col-start-4 l-col-end-6">About us</div>
+        <div id="contact" class="box hidden_mobile hidden_tablet display_desktop l-col-start-6 l-col-end-8">Contact</div>
+            <div id="search" class="box col-start-3 col-end-4 m-col-start-10 m-col-end-11 l-col-start-8 l-col-end-11">Search</div>
+                <div id="shopping_cart" class="box hidden_mobile display_desktop display_tablet m-col-start-11 m-col-end-12">Cart</div>
+                <div id="user" class="box col-start-4 col-end-5 m-col-start-12 m-col-end-13">user</div>
 
 </header>
 
-<main class="grid-con">
-    <div id="hero" class="box col-span-full">Hero Image</div>
+<main>
+    <div id="hero" class="box grid-con">hero product card</div>
     
-    <div id="product_1" class="box col-start-1 col-end-3 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
-        Product 1</div>
+    <section class="mobile-grid-con tablet-grid-con desk-grid-con">
+        <div id="description-hero" class="box col-start-1 col-end-5 m-col-start-2 m-col-end-8 l-col-start-3 l-col-end-11">
+        hero description</div>
+    </section>
 
-    <div id="product_2" class="box col-start-3 col-end-5 m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
-        Product 2</div>
+    <div id="hero-2" class="box grid-con">product card</div>
+    
+    <section class="mobile-grid-con tablet-grid-con desk-grid-con">
+        <div id="description-hero" class="box col-start-1 col-end-5 m-col-start-2 m-col-end-8 l-col-start-3 l-col-end-11">
+        Product Description</div>
+    </section>
 
-    <div id="service_1" class="box col-start-1 col-end-3 m-col-start-1 m-col-end-5 l-col-start-1 l-col-end-4">
-        Service 1</div>
-
-    <div id="service_2" class="box col-start-3 col-end-5 m-col-start-5 m-col-end-9 l-col-start-4 l-col-end-7">
-        Service 2</div>
-
-    <div id="service_3" class="box col-start-1 col-end-3 m-col-start-9 m-col-end-13 l-col-start-7 l-col-end-10">
-        
-        Service 3</div>
-
-    <div id="service_4" class="box col-start-3 col-end-5 m-col-start-1 m-col-end-5 l-col-start-10 l-col-end-13">
-        Service 4</div>
-
-    <div id="service_5" class="box col-start-1 col-end-3 m-col-start-5 m-col-end-9 l-col-start-1 l-col-end-4">
-        Service 5</div>
-
-    <div id="desk_add" class="hidden box l-col-start-4 l-col-end-10">
-        Image</div>
-
-    <div id="service_6" class="box col-start-3 col-end-5 m-col-start-9 m-col-end-13 l-col-start-10 l-col-end-13">
-        Service 6</div> 
 </main>
 
-<footer class="grid-con">
-    <div id="footer" class="box col-span-full m-col-span-full l-col-span-full">
+<footer class="mobile-grid-con tablet-grid-con desk-grid-con">
+    <div id="footer" class="box col-start-1 col-end-5 m-col-start-2 m-col-end-8 l-col-start-3 l-col-end-11">
         Footer</div>
 </footer>
 
